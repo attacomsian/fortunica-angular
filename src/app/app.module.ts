@@ -11,6 +11,7 @@ import {ClientComponent} from './dashboard/client/client.component';
 import {PageNotFoundComponent} from './not-found.component';
 
 import {FeatherIconsPipe} from './_pipes/feather-icons.pipe';
+import {HtmlFormatPipe} from './_pipes/html-format.pipe';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AuthGuard} from './_guards/auth.guard';
@@ -35,6 +36,7 @@ import { environment } from '../environments/environment';
     ClientComponent,
     PageNotFoundComponent,
     FeatherIconsPipe,
+    HtmlFormatPipe
   ],
   imports: [
     BrowserModule,

@@ -16,12 +16,12 @@ export class AnswerService {
   }
 
   // get answer
-  getQuestion(id: String): Observable<any> {
+  getAnswer(id: String): Observable<any> {
     return this.http.get<any>(this.API_URL + 'answer/' + id);
   }
 
   // save answer
-  saveQuestion(content: String, question: String): Observable<any> {
+  saveAnswer(content: String, question: String): Observable<any> {
     return this.http.post<any>(this.API_URL + '/answer', {
       content: content,
       question: question
